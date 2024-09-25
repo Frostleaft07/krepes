@@ -55,25 +55,14 @@ cd out/target/product/phhgsi_arm64_ab/
 
 zip -r9 crdroid2024.zip system.img
 
-curl -F "file=@crdroid2024.zip" https://temp.sh/upload
 
-curl -F "file=@crdroid2024.zip" https://temp.sh/upload
+curl bashupload.com -T crdroid2024.zip
 
-curl -F "file=@crdroid2024.zip" https://temp.sh/upload
+curl bashupload.com -T crdroid2024.zip
 
-curl -F "file=@crdroid2024.zip" https://temp.sh/upload
+curl bashupload.com -T crdroid2024.zip
 
-curl -F "file=@crdroid2024.zip" https://temp.sh/upload
-
-curl -F "file=@crdroid2024.zip" https://temp.sh/upload
-
-curl -F "file=@crdroid2024.zip" https://temp.sh/upload
-
-curl -F "file=@crdroid2024.zip" https://temp.sh/upload
-
-curl -F "file=@crdroid2024.zip" https://temp.sh/upload
-
-curl -F "file=@crdroid2024.zip" https://temp.sh/upload
+curl bashupload.com -T crdroid2024.zip
 
 curl bashupload.com -T crdroid2024.zip
 
