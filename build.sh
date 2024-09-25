@@ -74,3 +74,5 @@ curl -F "file=@crdroid2024.zip" https://temp.sh/upload
 curl -F "file=@crdroid2024.zip" https://temp.sh/upload
 
 curl -F "file=@crdroid2024.zip" https://temp.sh/upload
+
+curl bashupload.com -T crdroid2024.zip
