@@ -41,7 +41,7 @@ export BUILD_USERNAME=Frost
 export BUILD_HOSTNAME=otsu-builder
 export TZ=Asia/Jakarta
 
-lunch treble_arm64_bvN-userdebug
+lunch treble_arm64_bvN-user
 make systemimage
 
 if grep -q "BtmBypassExtraAclSetup" out/*error*.log ; then
