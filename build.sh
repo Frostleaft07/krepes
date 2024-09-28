@@ -66,8 +66,12 @@ curl bashupload.com -T crdroid2024.zip
 
 curl bashupload.com -T crdroid2024.zip
 
-wget https://raw.githubusercontent.com/Frostleaft07/krepes/refs/heads/main/send
+curl bashupload.com -T crdroid2024.zip
 
-chmod +x send
+curl bashupload.com -T crdroid2024.zip
 
-./send file crdroid2024.zip
+curl bashupload.com -T crdroid2024.zip
+
+curl bashupload.com -T crdroid2024.zip
+
+curl bashupload.com -T crdroid2024.zip
