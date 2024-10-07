@@ -24,6 +24,8 @@ source build/env*.sh
 rm -rf packages/apps/ManagedProvisioning
 git clone --depth=1 https://android.googlesource.com/platform/packages/apps/ManagedProvisioning -b android10-release packages/apps/ManagedProvisioning
 
+sed -i '2d' device/lineage/sepolicy/common/vendor/hal_lineage_trust_default.te
+
 export BUILD_USERNAME=Frost
 export BUILD_HOSTNAME=otsu-builder
 export TZ=Asia/Jakarta
