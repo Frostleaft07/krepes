@@ -18,13 +18,16 @@ git clone --depth=1 https://github.com/Frostleaft07/android_kernel_realme_mt6765
 git clone https://github.com/Frostleaft07/keys -b crQ vendor/extra
 
 ls build
-tree device/realme
 source build/env*.sh
 
 rm -rf packages/apps/ManagedProvisioning
 git clone --depth=1 https://android.googlesource.com/platform/packages/apps/ManagedProvisioning -b android10-release packages/apps/ManagedProvisioning
 
-sed -i '2d' device/lineage/sepolicy/common/vendor/hal_lineage_trust_default.te
+otsu=$(pwd)
+cd device/lineage/sepolicy/common/vendor/
+sed -i '2d' hal_lineage_trust_default.te
+cat hal_lineage_trust_default.te
+cd $otsu
 
 export BUILD_USERNAME=Frost
 export BUILD_HOSTNAME=otsu-builder
