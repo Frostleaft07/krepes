@@ -26,7 +26,16 @@ git clone --depth=1 https://android.googlesource.com/platform/packages/apps/Mana
 export BUILD_USERNAME=Frost
 export BUILD_HOSTNAME=otsu-builder
 export TZ=Asia/Jakarta
-export LOCALVERSION=" CRDROID"
 
 lunch lineage_RMX2185-userdebug
 brunch RMX2185
+
+cd out/target/product/RMX2185/
+
+curl bashupload.com -T *roid*2185*.zip
+
+curl bashupload.com -T *roid*2185*.zip
+
+curl bashupload.com -T *roid*2185*.zip
+
+curl bashupload.com -T *roid*2185*.zip
