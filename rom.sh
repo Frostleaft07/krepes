@@ -24,10 +24,6 @@ rm -rf packages/apps/ManagedProvisioning
 git clone --depth=1 https://android.googlesource.com/platform/packages/apps/ManagedProvisioning -b android10-release packages/apps/ManagedProvisioning
 
 otsu=$(pwd)
-cd device/lineage/sepolicy/common/vendor/
-sed -i '2d' hal_lineage_trust_default.te
-cat hal_lineage_trust_default.te
-cd $otsu
 
 export BUILD_USERNAME=Frost
 export BUILD_HOSTNAME=otsu-builder
@@ -35,6 +31,28 @@ export TZ=Asia/Jakarta
 
 lunch lineage_RMX2185-userdebug
 brunch RMX2185
+
+if grep -q "type hal_lineage_trust_default, domain;" out/*error*.log ; then
+  cd device/lineage/sepolicy/common/vendor/
+  sed -i '2d' hal_lineage_trust_default.te
+  cat hal_lineage_trust_default.te
+  cd $otsu
+  rm out/*error*.log
+  lunch lineage_RMX2185-userdebug
+  brunch RMX2185
+else
+  echo "g ad se"
+fi
+
+if grep -q "type hal_lineage_trust_default, domain;" out/*error*.log ; then
+  cd device/realme/RMX2185/
+  sed -i '30d' lineage_RMX2185.mk
+  cd $otsu
+  lunch lineage_RMX2185-userdebug
+  brunch RMX2185
+else
+  echo "g ad de"
+fi
 
 cd out/target/product/RMX2185/
 
