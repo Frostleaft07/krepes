@@ -56,10 +56,10 @@ fi
 
 cd out/target/product/RMX2185/
 
-curl bashupload.com -T *roid*2185*.zip
+curl bashupload.com -T crDroidAndroid-10.0-*2185*.zip
 
-curl bashupload.com -T *roid*2185*.zip
+curl bashupload.com -T crDroidAndroid-10.0-*2185*.zip
 
-curl bashupload.com -T *roid*2185*.zip
+curl bashupload.com -T crDroidAndroid-10.0-*2185*.zip
 
-curl bashupload.com -T *roid*2185*.zip
+curl bashupload.com -T crDroidAndroid-10.0-*2185*.zip
