@@ -38,6 +38,7 @@ if grep -q "type hal_lineage_trust_default, domain;" out/*error*.log ; then
   cat hal_lineage_trust_default.te
   cd $otsu
   rm out/*error*.log
+  echo "sed hal"
   lunch lineage_RMX2185-userdebug
   brunch RMX2185
 else
@@ -48,6 +49,7 @@ if grep -q "type hal_lineage_trust_default, domain;" out/*error*.log ; then
   cd device/realme/RMX2185/
   sed -i '30d' lineage_RMX2185.mk
   cd $otsu
+  echo "remove line sepol"
   lunch lineage_RMX2185-userdebug
   brunch RMX2185
 else
