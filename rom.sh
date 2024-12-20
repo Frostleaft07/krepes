@@ -3,7 +3,7 @@ sudo apt-get update -y && sudo apt-get install dialog bash sed wget git curl zip
 rm -rf .repo/local_manifests/
 find . -delete
 
-repo init -u https://github.com/StagOS/manifest -b r11 --depth=1
+repo init -u https://github.com/Corvus-AOSP/android_manifest -b 12 --depth=1
 
 /opt/crave/resync.sh ; repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8
 
