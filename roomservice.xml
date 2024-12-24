@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="gw" fetch="https://github.com/" />
+
+    <project path="device/realme/RMX2185" name="Frostleaft07/device_realme_RMX2185" remote="gw" revision="nightmare" />
+    <project path="vendor/realme/RMX2185" name="Frostleaft07/vendor_realme_RMX2185" remote="gw" revision="nightmare" />
+    <project path="kernel/realme/mt6765" name="Frostleaft07/android_kernel_realme_mt6765" remote="gw" revision="master" />
+    <project path="vendor/extra" name="Frostleaft07/keys" remote="gw" revision="crQ" />
+</manifest>
