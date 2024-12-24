@@ -2,7 +2,10 @@ sudo apt-get update -y && sudo apt-get install dialog bash sed wget git curl zip
 
 rm -rf .repo/local_manifests/
 
-repo init -u https://github.com/TenX-OS/manifest -b eleven --depth=1
+MNFS=https://github.com/Frostleaft07/TXmanifest
+BR=eleven
+
+repo init -u $MNFS -b $BR --depth=1
 
 # Check if we're running on Crave
 if [ -f /opt/crave/resync.sh ]; then
@@ -28,6 +31,8 @@ rm -rf packages/providers/DownloadProvider/
 git clone https://android.googlesource.com/platform/packages/providers/DownloadProvider -b android11-release packages/providers/DownloadProvider
 rm -rf packages/apps/Settings
 git clone https://github.com/Frostleaft07/packages_apps_Settings -b eleven packages/apps/Settings
+rm -rf system/core
+git clone --depth=1 https://github.com/LineageOS/android_system_core -b lineage-18.1 system/core
 
 export BUILD_USERNAME=frost
 export BUILD_HOSTNAME=otsu-builder
