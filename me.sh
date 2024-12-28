@@ -34,6 +34,6 @@ m aex -j$(nproc --all)
 
 cd out/target/product/RMX2185/
 
-curl bashupload.com -T *2185*.zip
+curl bashupload.com -T AospExtended*2185*.zip
 
-curl bashupload.com -T *2185*.zip
+curl bashupload.com -T AospExtended*2185*.zip
