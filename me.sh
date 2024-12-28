@@ -2,7 +2,7 @@ sudo apt-get update -y && sudo apt-get install dialog bash sed wget git curl zip
 
 rm -rf .repo/local_manifests/
 
-MNFS=https://github.com/AospExtended/manifest
+MNFS=https://github.com/Frostleaft07/manifest-aex
 BR=11.x
 
 repo init -u $MNFS -b $BR --depth=1
