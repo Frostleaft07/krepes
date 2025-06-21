@@ -17,7 +17,7 @@ else
 fi
 
 git clone https://github.com/Frostleaft07/android_device_realme_RMX2185 -b evoxT-nonoss device/realme/RMX2185
-git clone https://github.com/Frostleaft07/android_vendor_realme_RMX2185 -b T vendor/realme/RMX2185
+git clone https://github.com/Frostleaft07/vendor_realme_RMX2185 -b T vendor/realme/RMX2185
 git clone https://github.com/Frostleaft07/android_kernel_realme_mt6765 kernel/realme/mt6765
 # git clone --depth=1 https://android.googlesource.com/platform/prebuilts/vndk/v29 -b android10-mainline-resolv-release prebuilts/vndk/v29
 git clone https://github.com/Frostleaft07/keys -b crQ vendor/extra
