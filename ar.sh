@@ -27,7 +27,7 @@ source build/env*.sh
 export BUILD_USERNAME=frost
 export BUILD_HOSTNAME=otsu-builder
 export TZ=Asia/Jakarta
-
+ls vendor/corvus/config/
 lunch corvus_RMX2185-userdebug
 make corvus -j$(nproc --all)
 
