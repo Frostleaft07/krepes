@@ -2,8 +2,8 @@ sudo apt-get update -y && sudo apt-get install dialog bash sed wget git curl zip
 
 rm -rf .repo/local_manifests/
 
-MNFS=https://github.com/ArrowOS-Extended/android_manifest
-BR=arrow-13.1
+MNFS=https://github.com/Corvus-AOSP/android_manifest
+BR=13
 
 repo init -u $MNFS -b $BR --depth=1
 
@@ -28,12 +28,11 @@ export BUILD_USERNAME=frost
 export BUILD_HOSTNAME=otsu-builder
 export TZ=Asia/Jakarta
 
-lunch aosp_RMX2185-userdebug
-m bacon -j$(nproc --all)
-ota_sign
+lunch corvus_RMX2185-userdebug
+make corvus -j$(nproc --all)
 
 cd out/target/product/RMX2185/
 
-curl bashupload.com -T A*2185*.zip
+curl bashupload.com -T C*2185*.zip
 
-curl bashupload.com -T A*2185*.zip
+curl bashupload.com -T C*2185*.zip
