@@ -28,7 +28,7 @@ export BUILD_USERNAME=frost
 export BUILD_HOSTNAME=otsu-builder
 export TZ=Asia/Jakarta
 
-lunch arrow_RMX2185-userdebug
+lunch aosp_RMX2185-userdebug
 m bacon -j$(nproc --all)
 ota_sign
 
