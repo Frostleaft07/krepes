@@ -14,6 +14,9 @@ if [ -f /opt/crave/resync.sh ]; then
 else
     # We're running on a normal system
     repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j8
+    if [ $? -ne 0 ]; then
+    repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync -j1 --fail-fast
+    fi
 fi
 
 git clone https://github.com/Frostleaft07/android_device_realme_RMX2185R -b arrow device/realme/RMX2185
